@@ -2,7 +2,7 @@
 	"title": "株式会社サンキット北海道商品サイト",
 	"term": "制作・更新期間：2015-2016",
 	"language": [
-		{
+		
 			"javascript": {
 				"library": {
 					"name": "jQuery",
@@ -38,6 +38,6 @@
 					]
 				}
 			}
-		}
+		
 	]
 }
