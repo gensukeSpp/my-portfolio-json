@@ -49,7 +49,7 @@
 		},
 		{
 			"title": "Google Cloud画像共有サイト",
-			"description": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。アプリはGoogle Cloud PlatformのGoogle App Engine（以下GAE）上にデプロイ。",
+			"description": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformサービスのPaaS、Google App Engine（以下GAE）にデプロイ",
 			"term": "",
 			"language":[
 				{
@@ -60,14 +60,18 @@
 							"action":[
 								{
 										"summary": "GAEビルトインのdata store",
-										"description": "ユーザー、画像情報、説明の３つのテーブルを想定し、ソースコードからリレーショナルも実現。",
+										"description": "ユーザー、画像と画像情報、画像の説明の３つデータベースを想定し、それぞれリレーションを実現。",
 										"source": ""
-								}
+								},
+{
+"summary":""}
 							]
 						},
 						{
-							"name": "",
-							"action":[]
+							"name": "web_app2",
+"description":"GAEサードパーティのアプリケーションサーバー、ログイン機能、python定番のテンプレートエンジンjinja2も付属"
+							"action":[{
+}]
 						}
 					]
 				}
