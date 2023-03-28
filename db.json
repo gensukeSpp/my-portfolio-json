@@ -38,7 +38,7 @@
 								},
 								{
 									"summary": "ヘッダー、フッター部などを固定",
-									"description": "ヘッダー、フッター、サイドメニューをファイル単位で分割させ、block要素により、更新の際必要な部分だけの変更で済みます。",
+									"description": "ヘッダー、フッター、サイドメニューをファイル単位で分割させることで、block要素により、更新の際必要な部分だけの変更で済みます。",
 									"source": ""
 								}
 							]
@@ -54,24 +54,40 @@
 			"language":[
 				{
 					"program": "python",
+					"framework":[
+						{
+							"name": "webapp2",
+							"description":"GAE付属のアプリケーションサーバー",
+							"action":[
+								{
+									"summary": "ログイン機能",
+									"description": "ライブラリwebapp2_extras.auth、webapp2_extras.sessionsを用いて実装"
+								}
+							]
+						},
+						{
+							"name": "jinja2",
+							"description": "python定番のテンプレートエンジン",
+							"action":[
+								{
+									"summary": "共通部分であるヘッダーを、別ファイルにて作成"
+								}
+							]
+						}
+					],
 					"library":[
 						{
 							"name": "ndb",
 							"action":[
 								{
-										"summary": "GAEビルトインのdata store",
-										"description": "ユーザー、画像と画像情報、画像の説明の３つデータベースを想定し、それぞれリレーションを実現。",
-										"source": ""
-								},
-{
-"summary":""}
+									"summary": "GAEのデータストアライブラリ",
+									"description": "ユーザー、画像と画像情報、画像の説明の３つデータベースを想定し、それぞれリレーションを実現。",
+									"source": ""
+								}
 							]
 						},
 						{
-							"name": "web_app2",
-"description":"GAEサードパーティのアプリケーションサーバー、ログイン機能、python定番のテンプレートエンジンjinja2も付属"
-							"action":[{
-}]
+
 						}
 					]
 				}
