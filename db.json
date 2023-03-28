@@ -70,7 +70,8 @@
 							"description": "python定番のテンプレートエンジン",
 							"action":[
 								{
-									"summary": "共通部分であるヘッダーを、別ファイルにて作成"
+									"summary": "共通部分であるヘッダーを、別ファイルにて作成",
+									"description": ""
 								}
 							]
 						}
