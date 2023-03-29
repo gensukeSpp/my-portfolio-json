@@ -12,12 +12,12 @@
 							"action": [
 								{
 									"summary": "汎用性を高めるため、プラグインを作成",
-									"description": "formタグの引数を求めるかたちにしました。",
+									"explanation": "formタグの引数を求めるかたちにしました。",
 									"source": ""
 								},
 								{
 									"summary": "モーダルウィンドウを作成",
-									"description": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、ブラウザの更新の必要なく、不要なタグが残りません。",
+									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、ブラウザの更新の必要なく、不要なタグが残りません。",
 									"source": ""
 								}
 							]
@@ -29,16 +29,16 @@
 					"framework": [
 						{
 							"name": "Smarty",
-							"subscribe": "PHP製テンプレートエンジン",
+							"description": "PHP製テンプレートエンジン",
 							"action": [
 								{
 									"summary": ".phpファイル内変数を定義し.tplファイルにアサイン（入れ替え）",
-									"description": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替えがある場合、タグ自体の書き換えは必要なくなります。",
+									"explanation": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替え場面が多かったのですが、HTMLタグの書き換えが必要なく済みます。",
 									"source": ""
 								},
 								{
 									"summary": "ヘッダー、フッター部などを固定",
-									"description": "ヘッダー、フッター、サイドメニューをファイル単位で分割させることで、block要素により、更新の際必要な部分だけの変更で済みます。",
+									"explanation": "ヘッダー、フッター、サイドメニューをファイル単位で分割させ、block要素により、更新の際必要な部分だけの変更で済みます。",
 									"source": ""
 								}
 							]
@@ -48,8 +48,8 @@
 			]
 		},
 		{
-			"title": "Google Cloud画像共有サイト",
-			"description": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformサービスのPaaS、Google App Engine（以下GAE）にデプロイ",
+			"title": "画像共有サイト",
+			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）にデプロイ",
 			"term": "",
 			"language":[
 				{
@@ -61,7 +61,8 @@
 							"action":[
 								{
 									"summary": "ログイン機能",
-									"description": "ライブラリwebapp2_extras.auth、webapp2_extras.sessionsを用いて実装"
+									"explanation": "webapp2のライブラリ（webapp2_extras.auth/sessions）を用いて実装しました。",
+									"source":""
 								}
 							]
 						},
@@ -70,8 +71,9 @@
 							"description": "python定番のテンプレートエンジン",
 							"action":[
 								{
-									"summary": "共通部分であるヘッダーを、別ファイルにて作成",
-									"description": ""
+									"summary": ".htmlファイル内に変数を置くことができ、動的な値の表示が可能",
+									"explanation": "仮）共通するヘッダー部分は、別ファイルに分割させ、block要素により、更新の際必要な部分だけの変更で済みます。",
+									"source":""
 								}
 							]
 						}
@@ -82,13 +84,10 @@
 							"action":[
 								{
 									"summary": "GAEのデータストアライブラリ",
-									"description": "ユーザー、画像と画像情報、画像の説明の３つデータベースを想定し、それぞれリレーションを実現。",
+									"description": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、それぞれリレーションを実現。",
 									"source": ""
 								}
 							]
-						},
-						{
-
 						}
 					]
 				}
