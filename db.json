@@ -34,7 +34,7 @@
 								{
 									"summary": ".phpファイル内変数を定義し.tplファイルにアサイン（入れ替え）",
 									"explanation": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替え場面が多かったのですが、HTMLタグの書き換えが必要なく済みます。",
-									"source": "```js:product.php\\n$smarty->assign( 'ttl', '商品情報');```\\n\\n```js:content_base.tpl\\n{if $ttl eq \"商品情報\"}  <div id=\"pt\">\\n    <div id=\"page-top\">\\n...\\n{/if}```"
+									"source": "```js:product.php\n$smarty->assign( 'ttl', '商品情報');```\n\n```js:content_base.tpl\n{if $ttl eq \"商品情報\"}\n  ...  \n{/if}```"
 								},
 								{
 									"summary": "ヘッダー、フッター部などを固定",
