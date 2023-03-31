@@ -13,12 +13,12 @@
 								{
 									"summary": "汎用性を高めるため、プラグインを作成",
 									"explanation": "formタグの引数を求めるかたちにしました。",
-									"source": "# Hello, *Markdown*!"
+									"source": "1"
 								},
 								{
 									"summary": "モーダルウィンドウを作成",
 									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、ブラウザの更新の必要なく、不要なタグが残りません。",
-									"source": ""
+									"source": "2"
 								}
 							]
 						}
@@ -34,12 +34,12 @@
 								{
 									"summary": ".phpファイル内変数を定義し.tplファイルにアサイン（入れ替え）",
 									"explanation": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替え場面が多かったのですが、HTMLタグの書き換えが必要なく済みます。",
-									"source": "```js:product.php\n$smarty->assign( 'ttl', '商品情報');```\n\n```js:content_base.tpl\n{if $ttl eq \"商品情報\"}\n  ...  \n{/if}```"
+									"source": "3"
 								},
 								{
 									"summary": "ヘッダー、フッター部などを固定",
 									"explanation": "ヘッダー、フッター、サイドメニューをファイル単位で分割させ、include要素により、更新の際必要な部分だけの変更で済みます。",
-									"source": ""
+									"source": "4"
 								}
 							]
 						}
@@ -62,7 +62,7 @@
 								{
 									"summary": "ログイン機能",
 									"explanation": "webapp2のライブラリ（webapp2_extras.auth/sessions）を用いて実装しました。",
-									"source":""
+									"source":"5"
 								}
 							]
 						},
@@ -73,7 +73,7 @@
 								{
 									"summary": ".htmlファイル内に変数を置くことができ、動的な値の表示が可能",
 									"explanation": "仮）共通するヘッダー部分は、別ファイルに分割させ、block要素により、更新の際必要な部分だけの変更で済みます。",
-									"source":""
+									"source":"6"
 								}
 							]
 						}
@@ -85,7 +85,7 @@
 								{
 									"summary": "GAEのデータストアライブラリ",
 									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、それぞれリレーションを実現。",
-									"source": ""
+									"source": "7"
 								}
 							]
 						}
