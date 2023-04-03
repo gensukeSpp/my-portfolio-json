@@ -2,22 +2,23 @@
 	"products": [
 		{
 			"title": "株式会社サンキット北海道商品サイト",
-			"term": "制作・更新期間：2015/1-2016/12",
+			"term": "2015/1-2016/12",
 			"language": [
 				{
-					"program": "javascript",
+					"program": "PHP",
 					"library": [
 						{
-							"name": "jQuery",
+							"name": "Smarty",
+							"description": "PHP製テンプレートエンジン",
 							"action": [
 								{
-									"summary": "汎用性を高めるため、プラグインを作成",
-									"explanation": "formタグの引数を求めるかたちにしました。",
+									"summary": "ヘッダー、フッター部などを固定",
+									"explanation": "ヘッダー、フッター、サイドメニューをファイル単位で分割させ、include要素により、更新の際必要な部分だけの変更で済みます。",
 									"source": "1"
 								},
 								{
-									"summary": "モーダルウィンドウを作成",
-									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、ブラウザの更新の必要なく、不要なタグが残りません。",
+									"summary": "phpファイル内変数を定義し、tplファイルにアサイン（入れ替え）",
+									"explanation": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替え場面が多かったのですが、HTMLタグの書き換えが必要なく済みます。",
 									"source": "2"
 								}
 							]
@@ -25,20 +26,19 @@
 					]
 				},
 				{
-					"program": "PHP",
-					"framework": [
+					"program": "javascript",
+					"library": [
 						{
-							"name": "Smarty",
-							"description": "PHP製テンプレートエンジン",
+							"name": "jQuery",
 							"action": [
 								{
-									"summary": ".phpファイル内変数を定義し.tplファイルにアサイン（入れ替え）",
-									"explanation": "phpファイルで定義した変数をtplファイルのHTMLタグ内に展開させることで、動的に値を変更させることができます。商品の入れ替え場面が多かったのですが、HTMLタグの書き換えが必要なく済みます。",
+									"summary": "汎用性を高めるため、プラグインを自作",
+									"explanation": "プラグインメソッドを使い、トップページの商品から、商品情報ページの商品にダイレクトに移動を可能にしました。",
 									"source": "3"
 								},
 								{
-									"summary": "ヘッダー、フッター部などを固定",
-									"explanation": "ヘッダー、フッター、サイドメニューをファイル単位で分割させ、include要素により、更新の際必要な部分だけの変更で済みます。",
+									"summary": "モーダルウィンドウを作成",
+									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、不要なタグが残りません。",
 									"source": "4"
 								}
 							]
@@ -49,43 +49,29 @@
 		},
 		{
 			"title": "画像共有サイト",
-			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）にデプロイ",
+			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）上のアプリ",
 			"term": "",
 			"language":[
 				{
 					"program": "python",
-					"framework":[
+					"library": [
 						{
 							"name": "webapp2",
 							"description":"GAE付属のアプリケーションサーバー",
 							"action":[
 								{
-									"summary": "ログイン機能",
-									"explanation": "webapp2のライブラリ（webapp2_extras.auth/sessions）を用いて実装しました。",
-									"source":"5"
+									"summary": "ログイン認証機能、テンプレートエンジン機能も同梱",
+									"explanation": "ログイン機能にはwebapp2_extras.auth/sessionsを、テンプレートエンジンにはjinja2ライブラリを使用し実装できます。"
 								}
 							]
 						},
-						{
-							"name": "jinja2",
-							"description": "python定番のテンプレートエンジン",
-							"action":[
-								{
-									"summary": ".htmlファイル内に変数を置くことができ、動的な値の表示が可能",
-									"explanation": "仮）共通するヘッダー部分は、別ファイルに分割させ、block要素により、更新の際必要な部分だけの変更で済みます。",
-									"source":"6"
-								}
-							]
-						}
-					],
-					"library":[
 						{
 							"name": "ndb",
 							"action":[
 								{
 									"summary": "GAEのデータストアライブラリ",
 									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、それぞれリレーションを実現。",
-									"source": "7"
+									"source": "5"
 								}
 							]
 						}
