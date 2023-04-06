@@ -60,8 +60,9 @@
 							"description":"GAE付属のアプリケーションサーバー",
 							"action":[
 								{
-									"summary": "ログイン認証機能、テンプレートエンジン機能も同梱",
-									"explanation": "ログイン機能にはwebapp2_extras.auth/sessionsを、テンプレートエンジンにはjinja2ライブラリを使用し実装できます。"
+									"summary": "",
+									"explanation": "",
+									"source":"5"
 								}
 							]
 						},
@@ -71,7 +72,7 @@
 								{
 									"summary": "GAEのデータストアライブラリ",
 									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、それぞれリレーションを実現。",
-									"source": "5"
+									"source": "6"
 								}
 							]
 						}
