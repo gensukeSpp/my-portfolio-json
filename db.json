@@ -49,30 +49,35 @@
 		},
 		{
 			"title": "画像共有サイト",
-			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）上のアプリ",
 			"term": "",
+			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）上のアプリ",
 			"language":[
 				{
 					"program": "python",
 					"library": [
 						{
-							"name": "webapp2",
-							"description":"GAE付属のアプリケーションサーバー",
-							"action":[
-								{
-									"summary": "",
-									"explanation": "",
-									"source":"5"
-								}
-							]
-						},
-						{
 							"name": "ndb",
 							"action":[
 								{
 									"summary": "GAEのデータストアライブラリ",
-									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、それぞれリレーションを実現。",
-									"source": "6"
+									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成し、画像ありきの画像説明アプリなので、両データベースでリレーションを構成。",
+									"source": "5"
+								}
+							]
+						},
+						{
+							"name": "webapp2",
+							"description":"GAE付属のアプリケーションサーバー",
+							"action":[
+								{
+									"summary": "ログイン・認証機能",
+									"explanation": "webapp2_extras.auth/sessionsモジュールにより、セッションの保持など設定できます。",
+									"source":"6"
+								},
+								{
+									"summary": "ルーティング機能",
+									"explanation": "",
+									"source": "7"
 								}
 							]
 						}
