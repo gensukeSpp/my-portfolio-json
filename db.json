@@ -84,6 +84,45 @@
 					]
 				}
 			]
+		},
+		{
+			"title": "ポートフォリオサイト",
+			"term": "2023/03-",
+			"presentation": "これまでの主要な作品紹介サイト",
+			"language":[
+				{
+					"program": "javascript/typescript",
+					"library":[
+						{
+							"name": "React",
+							"description": "コンポーネント指向フロントエンドライブラリ",
+							"action": [
+								{
+									"summary": "作品紹介ページを共通化",
+									"explanation": "記事データを別途用意し、記事のみ入れ替える出力処理を、１コンポーネントに集約させました。",
+									"source": "8"
+								},
+								{
+									"summary": "Markdown出力",
+									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めてで表示させました。",
+									"source":"9"
+								}
+							]
+						},
+						{
+							"name": "vanilla-extract",
+							"description": "CSSinJSライブラリ",
+							"action": [
+								{
+									"summary": "レスポンシブ簡略化",
+									"description": "sprinkles.css.tsファイルを呼び出し、下記ソースコードのように利用することで、レスポンシブ対応を実現できます。",
+									"source": "10"
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	]
 }
