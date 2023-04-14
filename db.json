@@ -67,7 +67,7 @@
 						},
 						{
 							"name": "webapp2",
-							"description":"GAE付属のアプリケーションサーバー",
+							"description":"GAE(Pyhton2)付属のアプリケーションサーバー",
 							"action":[
 								{
 									"summary": "ログイン・認証機能",
@@ -76,7 +76,7 @@
 								},
 								{
 									"summary": "ルーティング機能",
-									"explanation": "",
+									"explanation": "正規表現を使用してルーティングさせることができます。",
 									"source": "7"
 								}
 							]
@@ -86,7 +86,7 @@
 			]
 		},
 		{
-			"title": "ポートフォリオサイト",
+			"title": "当ポートフォリオサイト",
 			"term": "2023/03-",
 			"presentation": "これまでの主要な作品紹介サイト",
 			"language":[
@@ -98,13 +98,13 @@
 							"description": "コンポーネント指向フロントエンドライブラリ",
 							"action": [
 								{
-									"summary": "作品紹介ページを共通化",
-									"explanation": "記事データを別途用意し、記事のみ入れ替える出力処理を、１コンポーネントに集約させました。",
+									"summary": "作品紹介ページを１コンポーネントに集約",
+									"explanation": "記事データを別途用意し、記事のみ入れ替える出力処理を、1つのコンポーネントに集約させました。",
 									"source": "8"
 								},
 								{
 									"summary": "Markdown出力",
-									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めてで表示させました。",
+									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めて表示させました。",
 									"source":"9"
 								}
 							]
@@ -115,7 +115,7 @@
 							"action": [
 								{
 									"summary": "レスポンシブ簡略化",
-									"description": "sprinkles.css.tsファイルを呼び出し、下記ソースコードのように利用することで、レスポンシブ対応を実現できます。",
+									"description": "sprinkles.css.tsファイルを呼び出し、下記ソースコードのように利用することで、レスポンシブ対応を容易に実現できます。",
 									"source": "10"
 								}
 							]
