@@ -1,6 +1,7 @@
 {
 	"products": [
 		{
+			"screen": "../image/sunkit_cap.png",
 			"title": "株式会社サンキット北海道商品サイト",
 			"term": "2015/1-2016/12",
 			"language": [
@@ -48,8 +49,9 @@
 			]
 		},
 		{
+			"screen": "",
 			"title": "画像共有サイト",
-			"term": "2018",
+			"term": "2018年いっぱい",
 			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）上のアプリ",
 			"language":[
 				{
@@ -87,6 +89,7 @@
 			]
 		},
 		{
+			"screen": "../image/portfolio_cap.png",
 			"title": "当ポートフォリオサイト",
 			"term": "2023/03-",
 			"presentation": "これまでの主要な作品紹介サイト",
