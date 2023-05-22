@@ -1,7 +1,7 @@
 {
 	"products": [
 		{
-			"title": "株式会社サンキット北海道商品サイト",
+			"title": "道内関連商品を販売する商品サイト",
 			"term": "2015/1-2016/12",
 			"language": [
 				{
@@ -38,14 +38,20 @@
 								},
 								{
 									"summary": "モーダルウィンドウを作成",
-									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、不要なタグが残りません。",
+									"explanation": "シングルトンデザインパターンを用いたことで、繰り返しモーダルを表示されても、不要なタグが残らないよう施しました。",
 									"source": "4"
+								},
+								{
+									"summary": "体質チェックページ",
+									"explanation": "チェック項目のチェックに応じた商品を紹介。",
+									"source": "11"
 								}
 							]
 						}
 					]
 				}
-			]
+			],
+			"link": "https://reprint-sunkit.dt.r.appspot.com/"
 		},
 		{
 			"title": "画像共有サイト",
@@ -53,7 +59,7 @@
 			"presentation": "画像のアップロード、表示機能、また他のメンバーとつながることで、つながったメンバーの画像を表示できます。Google Cloud PlatformのPaaS、Google App Engine（以下GAE）上のアプリ",
 			"language":[
 				{
-					"program": "python",
+					"program": "python2.7",
 					"library": [
 						{
 							"name": "ndb",
@@ -63,6 +69,11 @@
 									"summary": "SQLなしのリレーショナルデータベース",
 									"explanation": "ユーザー、画像と画像情報、画像の説明の３つデータベースを作成。画像を選択したのち画像説明を加えるため、両データベースでリレーションを構成。",
 									"source": "5"
+								},
+								{
+									"summary": "ユーザー同士をコネクト",
+									"explanation": "adminユーザーが、ユーザーをつなげることで、つながったユーザーの画像を閲覧できるようになります。",
+									"source": "12"
 								}
 							]
 						},
@@ -72,7 +83,7 @@
 							"action":[
 								{
 									"summary": "ログイン・認証機能",
-									"explanation": "webapp2_extras.auth/sessionsモジュールにより、セッションの保持など設定できます。",
+									"explanation": "セッションの保持など設定に、webapp2_extras.auth/sessionsモジュールを使います。",
 									"source":"6"
 								},
 								{
@@ -84,7 +95,8 @@
 						}
 					]
 				}
-			]
+			],
+			"link": "https://petit-image-share.an.r.appspot.com/login"
 		},
 		{
 			"title": "当ポートフォリオサイト",
@@ -105,7 +117,7 @@
 								},
 								{
 									"summary": "Markdown出力",
-									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めて表示させました。",
+									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めて表示。",
 									"source":"9"
 								}
 							]
@@ -116,7 +128,7 @@
 							"action": [
 								{
 									"summary": "レスポンシブ簡略化",
-									"description": "sprinkles.css.tsファイルを呼び出し、下記ソースコードのように利用することで、レスポンシブ対応を容易に実現できます。",
+									"description": "sprinkles.css.tsファイルを呼び出し、下記のように利用することで、レスポンシブ対応を容易に実現できます。",
 									"source": "10"
 								}
 							]
