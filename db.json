@@ -43,7 +43,7 @@
 								},
 								{
 									"summary": "体質チェックページ",
-									"explanation": "チェック項目のチェックに応じた商品を紹介。",
+									"explanation": "チェック項目のチェック数に応じた商品を紹介。",
 									"source": "11"
 								}
 							]
@@ -107,7 +107,7 @@
 					"program": "javascript/typescript",
 					"library":[
 						{
-							"name": "React",
+							"name": "React(Vite)",
 							"description": "コンポーネント指向フロントエンドライブラリ",
 							"action": [
 								{
@@ -119,6 +119,10 @@
 									"summary": "Markdown出力",
 									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めて表示。",
 									"source":"9"
+								},
+								{
+									"summary": "※※　今後、改良したいところ　※※",
+									"source": "13"
 								}
 							]
 						},
