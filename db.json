@@ -119,10 +119,6 @@
 									"summary": "Markdown出力",
 									"explanation": "ソースコード部分のMarkdown表記をシンタックスハイライト含めて表示。",
 									"source":"9"
-								},
-								{
-									"summary": "※※　今後、改良したいところ　※※",
-									"source": "13"
 								}
 							]
 						},
